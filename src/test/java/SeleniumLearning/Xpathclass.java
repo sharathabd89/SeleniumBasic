@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 public class Xpathclass {
     public static void main(String[] args)
     {
@@ -23,7 +22,7 @@ public class Xpathclass {
         }
        try
        {
-           driver.quit();//sharath
+           driver.quit();//sharath jhgjh
        }
        catch (Exception e)
        {
