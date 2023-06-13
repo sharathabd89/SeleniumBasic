@@ -28,13 +28,16 @@ public class IP_Portal {
     enter_otp.sendKeys("123456");
     driver.findElement(By.xpath("//button[@id='btn_otp_submit']")).click();
     //(//button[contains(text(),'Move To Final')])[4]
-    WebElement Search_Student_Phone=driver.findElement(By.xpath("//input[@placeholder='Phone']")) ;
+    WebElement Search_Student_Phone=driver.findElement(By.xpath("//input[@id='field-nameOrPhone' and @placeholder='Phone']")) ;
+        Search_Student_Phone.click();
     if(Search_Student_Phone.isEnabled())
     {
+
         Search_Student_Phone.sendKeys(" 2223232332");
         System.out.println("Search_Student_Phone_enabled");
     }
-    else{
+    else
+    {
         System.out.println("Search_Student_Phone_Disabled");
     }
 
